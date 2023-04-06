@@ -18,4 +18,13 @@
     <Folder Include="Repository\" />
     <Folder Include="Validators\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebUI\WebUI.csproj" />
+    <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
+    <ProjectReference Include="..\UnitTest\UnitTest.csproj" />
+    <ProjectReference Include="..\IntegrationTest\IntegrationTest.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.15" />
+  </ItemGroup>
 </Project>
