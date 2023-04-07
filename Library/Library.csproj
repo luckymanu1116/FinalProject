@@ -19,12 +19,8 @@
     <Folder Include="Validators\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebUI\WebUI.csproj" />
-    <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
-    <ProjectReference Include="..\UnitTest\UnitTest.csproj" />
-    <ProjectReference Include="..\IntegrationTest\IntegrationTest.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="NuGet.LibraryModel" Version="6.5.0" />
   </ItemGroup>
 </Project>

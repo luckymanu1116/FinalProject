@@ -5,7 +5,7 @@ using WebUI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExpenseTracker.Controllers
+namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

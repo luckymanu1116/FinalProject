@@ -9,9 +9,4 @@
   <ItemGroup>
     <None Include="..\.editorconfig" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IntegrationTest\IntegrationTest.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

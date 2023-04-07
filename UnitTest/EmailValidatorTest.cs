@@ -62,4 +62,4 @@ namespace UnitTest
             Assert.AreEqual(true, isEmailValid);
         }
     }
-
+}
