@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "User Weights";
+}
+
+<div class="text-center" style="display: flex;
+    flex-direction: column;">
+    <h1 class="display-4">View Weights</h1>
+    <br />
+    <form method="post" asp-controller="Calculate" asp-action="Back">
+        <table>
+            <tr>
+                
+                <th>Enter Weight</th>
+		        <th>Enter Age</th>
+		        <th>Enter Height</th>
+
+            </tr>
+        </table>
+    <br />
+        <button class="local-button" type="submit" title="Back To Calculate"> Back To Calculate </button>
+    </form>
+</div>

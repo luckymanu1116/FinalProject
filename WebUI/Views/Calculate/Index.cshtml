@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Calculate Weight Page";
+}
+
+<div class="text-center" style="display: flex;
+    flex-direction: column;">
+    <h1 class="display-4">Calculate Weight</h1>
+    <br />
+    <form method="post" asp-controller="Calculate" asp-action="SaveWeight">
+    <input class="local-input" type="number" required name="weightAmount" placeholder="Enter your Weight" />
+  
+        <button class="local-button" type="submit" title="Save Weight"> Save Weight</button>
+    </form>
+    <button class="local-button" style="background-color:gray" onclick="location.href='@Url.Action("Weight", "Calculate")'"> View Weights</button>
+</div>
