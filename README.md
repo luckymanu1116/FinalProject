@@ -19,7 +19,7 @@ The WebUI contain the views and the vewModels in it.<br>
 
 * Integration test has been setup and some test cases were present on it for the login page and the register page, I'M using pycharm for my integration test.<br>
 
-* [Note: readme file was delete while i'm pushing my code today(April 11) so i need to update it again.]
+* [Note: readme file was deleted while i'm pushing my code today(April 11) so i need to update it again.]
 
 
 
