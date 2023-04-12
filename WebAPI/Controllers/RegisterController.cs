@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library.Repository;
+using Library.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,37 +13,30 @@ namespace WebAPI.Controllers
     [Route("api/[controller]")]
     public class RegisterController : Controller
     {
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly ILogger<RegisterController> _logger;
+        private readonly IRepository<UserDbModel> _repository;
+
+        public RegisterController(ILogger<RegisterController> logger, IRepository<UserDbModel> repository)
         {
-            return new string[] { "value1", "value2" };
+            _logger = logger;
+            _repository = repository;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost(Name = "registerUser")]
+        public String RegisterUser(UserModel userModel)
         {
-            return "value";
+            var userDbModel = new UserDbModel()
+            {
+                UserId = userModel.Email.Replace("@", "ATTHERATE").Replace(".", "DOT").ToUpper(),
+                Email = userModel.Email,
+                Password = userModel.Password,
+                FirstName = userModel.FirstName,
+                LastName = userModel.LastName,
+            };
+            _repository.Add(userDbModel);
+            return "SUCCESS";
         }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
 

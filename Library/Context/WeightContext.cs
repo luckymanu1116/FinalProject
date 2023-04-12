@@ -10,7 +10,7 @@ namespace Library.Context
         {
         }
 
-        //public DbSet<WeightDbModel> WeightDbModels => Set<WeightDbModel>();
+        public DbSet<WeightDbModel> WeightDbModels => Set<WeightDbModel>();
 
         public DbSet<UserDbModel> UserDbModels => Set<UserDbModel>();
 
