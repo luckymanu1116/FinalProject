@@ -1,7 +1,16 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using NToastNotify;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddNToastNotifyNoty(new NotyOptions()
+
+{
+    ProgressBar = true,
+    Timeout = 5000,
+    Theme = "mint"
+});
+
 
 var app = builder.Build();
 
@@ -19,6 +28,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseNToastNotify();
 
 app.MapControllerRoute(
     name: "default",
