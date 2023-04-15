@@ -21,6 +21,11 @@ The WebUI contain the views and the vewModels in it.<br>
 
 * [Note: readme file was deleted while i'm pushing my code today(April 11) so i need to update it again.]
 
+# Checkin 2
+* Added migrations, Login, register and user management was done via scaffolding, but I customized to have first name and last name stored as well.<br>
+
+
+
 
 
 
