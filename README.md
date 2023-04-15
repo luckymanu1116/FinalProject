@@ -27,7 +27,7 @@ The WebUI contain the views and the vewModels in it.<br>
 * My initial idea is to use firebase, but since it took too long I decided to go with the ASP.NET with idenity approach, since razorpages were quite straightforward and takes less time since there is easy support for easy scaffolding with entity framework.<br>
 * All the quries are did in linq query to get user details.
 * Data attributes added for classes, like [Required].
-* Added unit test for login pages where it test the user datails and updated integration tests.
+* Added unit test for login pages where it test the user datails.
  
 
 
