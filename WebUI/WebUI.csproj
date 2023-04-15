@@ -12,4 +12,9 @@
   <ItemGroup>
     <PackageReference Include="NToastNotify" Version="8.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest\UnitTest.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
