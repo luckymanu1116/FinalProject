@@ -22,9 +22,14 @@ The WebUI contain the views and the vewModels in it.<br>
 * [Note: readme file was deleted while i'm pushing my code today(April 11) so i need to update it again.]
 
 # Checkin 2
-* Added migrations, Login, register and user management was done via scaffolding, but I customized to have first name and last name stored as well.<br>
 
+* Added migrations, Login, register and user management was done via scaffolding, but I customized to have first name and last name stored as well.<br>
 * My initial idea is to use firebase, but since it took too long I decided to go with the ASP.NET with idenity approach, since razorpages were quite straightforward and takes less time since there is easy support for easy scaffolding with entity framework.<br>
+* All the quries are did in linq query to get user details.
+* Data attributes added for classes, like [Required].
+* Added unit test for login pages where it test the user datails and updated integration tests.
+ 
+
 
 
 
