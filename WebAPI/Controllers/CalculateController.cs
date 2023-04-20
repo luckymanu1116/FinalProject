@@ -11,12 +11,29 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class CalculateController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        private readonly ILogger<CalculateController> _logger;
+        private readonly IRepository<WeightDbModel> _repository;
+
+        public CalculateController(ILogger<CalculateController> logger, IRepository<WeightDbModel> repository)
         {
-            return View();
+            _logger = logger;
+            _repository = repository;
+        }
+
+        [HttpPost(Name = "calculateWeight")]
+        public String CalculateWeight(WeightDbModel weightDbModel)
+        {
+            if (weightDbModel.Weight != null && weightDbModel.Amount != null)
+            {
+                weightDbModel.Weight = Weight.getWeights(WeightDbModel.Weights);
+                _repository.Add(WeightDbModel);
+                return "SUCCESS";
+            }
+            return "FAILURE";
         }
     }
 }
