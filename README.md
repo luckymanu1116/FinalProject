@@ -43,6 +43,9 @@ The WebUI contain the views and the vewModels in it.<br>
 
 * Currently working on the comments that I get on previous checkin that using the IdentityDbContext for secure logins and trying to avoid the login models .<br>
 
+# MVC controller test issues
+followed this course and tried to add the test contollers but some of the test controllers don't work as expected. https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0 The mock setup always throws an exception. Tried to find solutions on stackoverflow but none of them worked, tried out best.
+
 # Challanges faced and resolved
 * DB connection, resolved it.
 * stumbled across few issues while testing and then followed few youtube tutorial and as well as your classes and added tests.
