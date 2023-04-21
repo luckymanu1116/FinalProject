@@ -42,3 +42,10 @@ The WebUI contain the views and the vewModels in it.<br>
 * Added ModelState.IsValid for server validation, added basic checks before CRUD operations.<br>
 
 * Currently working on the comments that I get on previous checkin that using the IdentityDbContext for secure logins and trying to avoid the login models .<br>
+
+# Challanges faced and resolved
+* DB connection, resolved it.
+* stumbled across few issues while testing and then followed few youtube tutorial and as well as your classes and added tests.
+
+
+
