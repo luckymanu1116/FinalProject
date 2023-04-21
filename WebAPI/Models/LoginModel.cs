@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace WebAPI.Models
+namespace WebUI.Models
 {
 	public class LoginModel
 	{
